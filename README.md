@@ -11,7 +11,8 @@ The IDE of BASIC-256 with the program:
 
 ![test256_list.png](test256_list.png)
 
-The output saved to PNG by the program
+The output saved to PNG by the program:
+
 ![test256.png](test256.png)
 
 
