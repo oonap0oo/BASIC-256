@@ -1,0 +1,29 @@
+# Julia fractal   K Moerman 2026
+global N,r,g,b
+w=600: h=700: N=512: hw=w/2: hh=h/2
+dim r(N): dim g(N): dim b(N)
+call calccolors()
+graphsize w,h:clg black:fastgraphics
+Cre = 0.357 :Cim = 0.357
+for x=0 to hw
+	Zre_start=(x - hw) / hw
+	for y=0 to h
+		Zre = Zre_start: Zim=(y - hh) / hh * 1.3: c = 0
+		do 
+			Zre_sq = Zre * Zre: Zim_sq = Zim * Zim
+			Zim=2 * Zre * Zim + Cre
+			Zre=Zre_sq - Zim_sq + Cre
+			c++
+		until c > N - 2 or (zre_sq + Zim_sq) > 4
+		color rgb(r[c],g[c],b[c]): plot x,y: plot w-x,h-y
+	next y
+	refresh
+next x
+imgsave "julia256.png"
+
+subroutine calccolors()# pre- calc rgb values
+for k=0 to N-1#          for faster execution
+	c=255 * sqr(k) / sqr(N)
+	r[k]=(c % 32)*8: g[k]=(c % 128)*2: b[k]=(c % 64)*4
+next k
+end subroutine
