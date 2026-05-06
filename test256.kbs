@@ -1,0 +1,20 @@
+# first tests of basic256
+tstart=msec # for time measurement
+w=900: h=600 # image dimensions
+hw=w/2: hh=h/2
+graphsize w,h: fastgraphics
+clg white
+for x=-hw to hw # iterate through image
+for y=-hh to hh
+xx=0.85*x: yy=0.85*y+150
+d=abs(xx^3/4E4 - xx + yy*3 - yy^2/1e2)
+r=d % 256
+g=(d mod 128) * 2
+b=(d mod 32) * 8
+color rgb(r,g,b): plot x+hw,y+hh
+next y   
+refresh
+next x
+tstop=msec:dt=(tstop - tstart)/1000
+print "duration: ";round(dt,1); "s"
+imgsave "test256.png" #save as png
