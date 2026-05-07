@@ -37,6 +37,8 @@ The main loop:
 	    x = x - y\32 # 3rd step to reduce phase error
     until x=1024 and y=0 # until back to initial values
 
+The integer division by powers of 2 could be done using bit shift to the right also.
+
 Using info from: ["Drawing Circles · Hrvoje's Blog"](https://blog.hrvoje.org/2020/05/drawing-circles/)
 
 The code: [minsky.kbs](minsky.kbs)
