@@ -11,7 +11,7 @@ for x=0 to hw
 		Zre = Zre_start: Zim=(y - hh) / hh * 1.3: c = 0
 		do 
 			Zre_sq = Zre * Zre: Zim_sq = Zim * Zim
-			Zim=2 * Zre * Zim + Cim
+			Zim=2 * Zre * Zim + Cim # corrected bug, replaced Cre with Cim
 			Zre=Zre_sq - Zim_sq + Cre
 			c++
 		until c > N - 2 or (zre_sq + Zim_sq) > 4
