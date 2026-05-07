@@ -35,6 +35,7 @@ The main loop:
         x = x - y\32 # using integer division
         y = y + x\16 # new value of x has to be used
 	    x = x - y\32 # 3rd step to reduce phase error
+		plot(x,y)
     until x=1024 and y=0 # until back to initial values
 
 The integer division by powers of 2 could be done using bit shift to the right also.
