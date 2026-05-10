@@ -46,4 +46,16 @@ The code: [minsky.kbs](minsky.kbs)
 
 ![minsky.png](minsky.png)
 
+## Duoble Pendulum
+
+Attempting to simulate a double pendulum using BASIC-256.
+
+Using equations found at: [https://www.physics.usyd.edu.au/~wheat/dpend_html/](https://www.physics.usyd.edu.au/~wheat/dpend_html/)
+
+The code: [double_pendulum.kbs](double_pendulum.kbs)
+
+A GIF screen recording of the animation:
+
+![double_pendulum.gif](double_pendulum.gif)
+
 
