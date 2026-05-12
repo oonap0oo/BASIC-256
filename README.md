@@ -58,4 +58,36 @@ A GIF screen recording of the animation:
 
 ![double_pendulum.gif](double_pendulum.gif)
 
+## Barnsley Fern
 
+This algorithm generates an image of a fern.
+
+Using infirmation from [the wikipedia article](https://en.wikipedia.org/wiki/Barnsley_fern)
+
+It applies 4 possible transformations on the coordinates of a point x,y. The probabilities of these four being choosen differ for transformation.
+
+The following code is iterated many times, each iteration one out of four tranformations are applied and one point is plotted.
+
+    r = rand() # value between 0 and 1
+	begin case # choose 1 out of 4 possible transforms
+	case r < 0.01 # probability 1%
+		xn = 0.0
+		y = 0.16 * y
+	case r < 0.86 # probability 85%
+		xn = 0.85 * x + 0.04 * y
+		y = -0.04 * x + 0.85 * y + 1.6
+	case r < 0.93 # probability 7%
+		xn = 0.2 * x - 0.26 * y
+    	y = 0.23 * x + 0.22 * y + 1.6
+	else # probability 7%
+		xn = -0.15 * x + 0.28 * y
+    	y = 0.26 * x + 0.24 * y + 0.44
+	end case
+	x = xn
+	call plotpoint(x,y,xscale,yscale,hw,h)
+
+The code: [barnsley_fern2.kbs](barnsley_fern2.kbs)
+
+The generated image:
+
+![barnsley_fern2.png](barnsley_fern2.png)
