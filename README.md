@@ -56,7 +56,9 @@ The code: [double_pendulum.kbs](double_pendulum.kbs)
 
 A GIF screen recording of the animation:
 
-![double_pendulum.gif](double_pendulum.gif)
+![double_pendulum.gif](double_pendulum.gif
+
+[Longer video on Youtube](https://youtu.be/dgZiOfFr1is)
 
 ## Barnsley Fern
 
