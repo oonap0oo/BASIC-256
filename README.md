@@ -56,7 +56,7 @@ The code: [double_pendulum.kbs](double_pendulum.kbs)
 
 A GIF screen recording of the animation:
 
-![double_pendulum.gif](double_pendulum.gif
+![double_pendulum.gif](double_pendulum.gif)
 
 [Longer video on Youtube](https://youtu.be/dgZiOfFr1is)
 
@@ -64,7 +64,7 @@ A GIF screen recording of the animation:
 
 This algorithm generates an image of a fern.
 
-Using infirmation from [the wikipedia article](https://en.wikipedia.org/wiki/Barnsley_fern)
+Using information from [the wikipedia article](https://en.wikipedia.org/wiki/Barnsley_fern)
 
 It applies 4 possible transformations on the coordinates of a point x,y. The probabilities of these four being choosen differ for transformation.
 
