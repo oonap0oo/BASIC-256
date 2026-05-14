@@ -46,7 +46,7 @@ The code: [minsky.kbs](minsky.kbs)
 
 ![minsky.png](minsky.png)
 
-## Duoble Pendulum
+## Double Pendulum
 
 Attempting to simulate a double pendulum using BASIC-256.
 
