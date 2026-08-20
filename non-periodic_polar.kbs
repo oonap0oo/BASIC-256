@@ -1,0 +1,28 @@
+# Non-periodic-polar  K Moerman 2026
+# x,y coord. according to same function evaluated
+# at different points
+
+function f(x)# non periodic function
+	f=sin(pi*x)+sin(3.5*x)
+end function
+
+function m(x)# mapping value to pixel coord.
+	m=250+110*x
+end function
+
+graphsize 500,500:fastgraphics
+color WHITE
+offset=1: dt=.1: colbkg=rgb(0,0,0,80)
+while True
+	color colbkg
+	rect 0,0,500,500# fade previous frame to black
+	color WHITE
+	t2=offset# starting value t2 increases always
+	for t1=0 to 333 step dt# t1 always same values
+		r=f(t2): a=f(t1)
+		plot m(r*cos(a)),m(r*sin(a))
+		t2=t2+dt
+	next
+	REFRESH 
+	offset=offset+.002
+end while

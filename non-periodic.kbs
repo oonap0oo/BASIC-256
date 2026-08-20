@@ -1,0 +1,23 @@
+# Non-periodic   K Moerman 2026
+# x,y coord. according to same function evaluated
+# at different points
+
+function f(x)# non periodic function
+	f=250+110*(sin(pi*x)+sin(4.5*x))
+end function
+
+graphsize 500,500:fastgraphics
+color WHITE
+offset=1: dt=.03: colbkg=rgb(0,0,0,30)
+while True
+	color colbkg
+	rect 0,0,500,500# fade previous frame to black
+	color WHITE
+	t2=offset# starting value t2 increases always
+	for t1=0 to 75 step dt# t1 always same values
+		plot f(t2),f(t1)
+		t2=t2+dt
+	next
+	REFRESH 
+	offset=offset+.0015
+end while
