@@ -1,5 +1,5 @@
 # BASIC-256
-Basic programming using [BASIC-256](https://basic256.org/)
+Basic programming using BASIC-256 [https://basic256.org/](https://basic256.org/), use the online documentation [https://doc.basic256.org/](https://doc.basic256.org/)
 
 ## First test of BASIC-256
 
@@ -96,7 +96,7 @@ The generated image:
 
 ## Non-periodic
 
-Made using BASIC-256 version 2.1.0
+Made using the new BASIC-256 version 2.1.0
 
 While exploring [Javascript with P5.JS](https://github.com/oonap0oo/P5.JS), I came op with these simple animations. 
 
