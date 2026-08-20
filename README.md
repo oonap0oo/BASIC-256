@@ -93,3 +93,25 @@ The code: [barnsley_fern2.kbs](barnsley_fern2.kbs)
 The generated image:
 
 ![barnsley_fern2.png](barnsley_fern2.png)
+
+## Non-periodic
+
+Made using BASIC-256 version 2.1.0
+
+While exploring [Javascript with P5.JS](https://github.com/oonap0oo/P5.JS), I came op with these simple animations. 
+
+After learning online that a function like 
+
+    sin(pi*x)+sin(4.5*x) 
+
+is not periodic I made this animation which uses this function for the x and y coordinates of points but evaluated at different regions.
+
+I ported them to BASIC-256 to give the new incarnation of this BASIC version a try. I had forgotten a lot and the online help was very useful.
+
+The code:
+[non-periodic.kbs](non-periodic.kbs)
+[non-periodic_polar.kbs](non-periodic_polar.kbs)
+
+Still images from the animations:
+![non-periodic.png](non-periodic.png)
+![non-periodic_polar.png](non-periodic_polar.png)
