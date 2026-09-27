@@ -1,0 +1,14 @@
+# Swirl3D   K Moerman 2026
+t=0:HW=285:W=2*HW:R=HW-30:D=R/1.41:BG=rgb(0,0,0,10)
+graphsize W,W:clg black:graphvisible true:fastgraphics
+while true
+	color BG:rect 0,0,W,W:dt=.25*sin(t)
+	for u=t to t+6.28 step .3+dt
+		q=sin(u):p=cos(u):penwidth(2.5-p)
+		c=127*(1+p):color rgb(127*(1+q),c,255-c)
+		for v=t to t+6.28 step .3-dt
+			plot(HW+R*q*cos(v),HW+D*p+D*q*sin(v))
+		next v
+	next u
+refresh:framerate 60:t=t+.005
+endwhile

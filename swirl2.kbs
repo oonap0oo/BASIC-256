@@ -1,0 +1,21 @@
+# Swirl2   K Moerman 2026
+f=0:HW=290:W=2*HW:R=HW-20:bg=rgb(0,0,0,8)
+graphsize W,W:clg black:graphvisible true:fastgraphics
+while true
+	if f&3=0 then color bg:rect 0,0,W,W
+	t=.005*f++:u=t
+	while u<t+6.28
+		q=sin(u):p=cos(u):penwidth(1+2*abs(q))
+		c=255*pos(p):color rgb(255*pos(q),c,255-c):v=u
+		while v<u+6.28
+			plot(HW+R*q*cos(v),HW+R*q*sin(v))
+			v+=.5-.4*cos(v-t)
+		endwhile
+	u+=.5+.4*sin(u-t)	
+	endwhile
+refresh:framerate 60
+endwhile
+
+function pos(x)
+pos=.5*(x+abs(x))
+end function
