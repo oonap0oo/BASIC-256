@@ -1,0 +1,19 @@
+# Torus   K Moerman 2026
+f=0:HW=255:W=2*HW:R=80:BG=rgb(0,0,0,10):penwidth 2
+graphsize W,W:clg black:graphvisible true:fastgraphics
+while true
+	framerate 60:color BG:rect 0,0,W,W:t=f++/255
+	for v=t to t+6.28 step .2
+		sc=5-4*sin(v):ux=v/sc:vt=v+t
+		for u=ux to ux+6.28 step .3
+			k=2*R+R*cos(vt):ut=u+t
+			color rgb(pos(255*sin(ut)),sc*28,pos(255*sin(vt)))
+			plot(HW+k*cos(ut),HW+.7*k*sin(ut)+.7*R*sin(vt))
+		next u
+	next v
+	refresh
+endwhile
+
+function pos(x)
+pos=.5*(x+abs(x))
+end function
