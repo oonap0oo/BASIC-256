@@ -10,7 +10,7 @@ From the website:
 
 There were several significant updates made available recently.
 
-Use the online documentation
+Use the online documentation:
 
 [https://doc.basic256.org/](https://doc.basic256.org/)
 
@@ -122,10 +122,12 @@ is not periodic I made this animation which uses this function for the x and y c
 I ported them to BASIC-256 to give the new incarnation of this BASIC version a try. I had forgotten a lot and the online help was very useful.
 
 The code:
+
 [non-periodic.kbs](non-periodic.kbs)
 [non-periodic_polar.kbs](non-periodic_polar.kbs)
 
 Still images from the animations:
+
 ![non-periodic.png](non-periodic.png)
 ![non-periodic_polar.png](non-periodic_polar.png)
 
@@ -138,11 +140,13 @@ Also ported from earlier versions in javascript P5.JS. These animations generate
     z = R cos(u)
 
 The code:
+
 [swirl2.kbs](swirl2.kbs)
 [swirl3D.kbs](swirl3D.kbs)
 
 A still images from the animations
 (the window containing the graphical output can also be detached from the IDE as a seperate window and enlarged)
+
 ![swirl2.png](swirl2.png)
 ![swirl3D.png](swirl3D.png)
 
