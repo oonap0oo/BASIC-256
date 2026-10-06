@@ -1,4 +1,5 @@
 # BASIC-256
+
 Basic programming using BASIC-256 [https://basic256.org/](https://basic256.org/), use the online documentation [https://doc.basic256.org/](https://doc.basic256.org/)
 
 ## First test of BASIC-256
@@ -115,3 +116,42 @@ The code:
 Still images from the animations:
 ![non-periodic.png](non-periodic.png)
 ![non-periodic_polar.png](non-periodic_polar.png)
+
+## Swirl and swirl 3D
+
+Also ported from earlier versions in javascript P5.JS. These animations generate a visual effect based on the equations of a sphere using spherical coordinates.
+
+    x = R sin(u) cos(v)
+    y = R sin(u) sin(v)
+    z = R cos(u)
+
+The code:
+[swirl2.kbs](swirl2.kbs)
+[swirl3D.kbs](swirl3D.kbs)
+
+A still images from the animations
+(the window containing the graphical output can also be detached from the IDE as a seperate window and enlarged)
+![swirl2.png](swirl2.png)
+![swirl3D.png](swirl3D.png)
+
+## Torus
+
+This version puts the points on the surface of a torus.
+
+    X = (2R + Rcos(v))cos(u)
+    Y = (2R + Rcos(v))sin(u)
+    Z = R sin(v)
+
+The 3D torus is plotted on the 2D image as
+
+    xplot = X
+	yplot = .7Y + .7Z
+
+Where the factor .7 approximates 1/sqrt(2)
+
+The code:
+[torus.kbs](torus.kbs)
+
+A still from the animation:
+(the window containing the graphical output can also be detached from the IDE as a seperate window and enlarged)
+![torus.png](torus.png)
