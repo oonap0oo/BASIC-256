@@ -1,6 +1,18 @@
 # BASIC-256
 
-Basic programming using BASIC-256 [https://basic256.org/](https://basic256.org/), use the online documentation [https://doc.basic256.org/](https://doc.basic256.org/)
+Basic programming using BASIC-256
+
+From the website:
+
+'BASIC-256 is a beginner-friendly programming language that makes learning to code fun with graphics, math, and immediate results.'
+
+[https://basic256.org/](https://basic256.org/)
+
+There were several significant updates made available recently.
+
+Use the online documentation
+
+[https://doc.basic256.org/](https://doc.basic256.org/)
 
 ## First test of BASIC-256
 
