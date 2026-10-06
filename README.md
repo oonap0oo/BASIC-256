@@ -166,8 +166,11 @@ The 3D torus is plotted on the 2D image as
 Where the factor .7 approximates 1/sqrt(2)
 
 The code:
+
 [torus.kbs](torus.kbs)
 
 A still from the animation:
+
 (the window containing the graphical output can also be detached from the IDE as a seperate window and enlarged)
+
 ![torus.png](torus.png)
